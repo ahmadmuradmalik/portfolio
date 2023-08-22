@@ -4,7 +4,6 @@ import "./About.css"
 
 function About() {
   return (
-    
         <div className="about-me-container">
         <div className="profile-pic-container">
         <img src={profileImage} alt="Profile" className="profile-pic" />

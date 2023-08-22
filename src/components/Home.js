@@ -1,23 +1,32 @@
-import React from 'react'
-import kitten1 from '../img/kitten1.jpeg';
-import kitten2 from '../img/kitten2.jpeg';
-import kitten3 from '../img/kitten3.jpeg';
-import kitten4 from '../img/kitten4.jpeg';
+import React, { useRef } from 'react';
+import { Canvas, useFrame } from '@react-three/fiber';
+
+const Box = () => {
+  const meshRef = useRef();
+
+  useFrame((state, delta) => {
+    if (meshRef.current) {
+      meshRef.current.rotation.x += delta * 0.5;
+      meshRef.current.rotation.y += delta * 0.5;
+    }
+  });
+
+  return (
+    <mesh ref={meshRef}>
+      <boxBufferGeometry args={[1, 1, 1]} />
+      <meshStandardMaterial color="orange" />
+    </mesh>
+  );
+};
 
 const Home = () => {
   return (
-    <>
-    <div>Hi friends this is the home pageeeeee where we eill be adding cute cat pics later :D</div>
+    <Canvas>
+      <ambientLight />
+      <pointLight position={[10, 10, 10]} />
+      <Box />
+    </Canvas>
+  );
+};
 
-    <div className="kitten-collage">
-    <img src={kitten1} alt="Kitten 1" className="kitten-image" />
-    <img src={kitten2} alt="Kitten 2" className="kitten-image" />
-    <img src={kitten3} alt="Kitten 3" className="kitten-image" />
-    <img src={kitten4} alt="Kitten 4" className="kitten-image" />
-     </div>
-    </>
-
-  )
-}
-
-export default Home
+export default Home;

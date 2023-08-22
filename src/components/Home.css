@@ -1,15 +1,6 @@
-.kitten-collage {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+.home-container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
   }
-  
-  .kitten-image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
   

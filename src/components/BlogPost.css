@@ -20,9 +20,9 @@
     font-size: 1.5em;
   }
 
-  .omg {
-    overflow: hidden;
-    color: blue;
+  .omgpls {
+    overflow-x: auto;
+    text-align: center;
   }
   
 

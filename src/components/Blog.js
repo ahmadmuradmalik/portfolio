@@ -7,7 +7,7 @@ import './Blog.css';
 const Blog = ({blogs}) => {
   return (
     <div className="blog-list-outer-wrapper">
-      <h1 className="blog-list-title">Hi, welcome to my thing!!</h1>
+      <h1 className="blog-list-title">my blog ish thing</h1>
       <ul>
       {blogs.map((post) => (
         <li className="blog-element" key={post.postId}>

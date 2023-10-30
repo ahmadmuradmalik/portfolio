@@ -9,7 +9,12 @@ const Portfolio = () => {
       github: "https://github.com/ahmadmuradmalik/ahmadsMathLibrary"
     },
     {
-      title: "RNN stock attempt",
+      title: "Fake Face Generator",
+      description: "Designed and implemented a Variational Autoencoder, trained it on the CelebA dataset for high-quality facial image synthesis. This VAE uses convolutional layers to capture encode/decode images. Mainly used to generate new synthetic facial images.",
+      github: "https://github.com/ahmadmuradmalik/CelebA-Variational-Autoencoder"
+    },
+    {
+      title: "Stock price prediction using RNN's",
       description: "Attempt at going through coding up a basic rnn model and feeding on apple stock prices for the last 5 years. Tried implementing both vanilla rnns and LSTM's. Initial Attempt at time series forecasting.",
       github: "https://github.com/ahmadmuradmalik/RNN-stock-attempt"
     },
@@ -20,7 +25,7 @@ const Portfolio = () => {
     },
     {
         title: "Housing Prices Analysis",
-        description: "Took US housing prices and then fitted models to predict houses given varipus predecided features. Testest mmultiple types of models and then compared their performance woth each other using multiple metrics to decide on the best one",
+        description: "Took US housing prices and then fitted models to predict houses given various predecided features. Tested different types of models (LinearRegression, RandomForests, NearestNeighbor) and then compared their performance woth each other using multiple metrics to decide on the best one",
         github: "https://github.com/ahmadmuradmalik/Basic-Housing-Analysis"
       },
     // Add more projects as needed
@@ -30,7 +35,7 @@ const Portfolio = () => {
     <div className="portfolio-container">
       <h1>Ahmad's Portfolio</h1>
       <br></br>
-      <p>Hi I'm Ahmad! I'm currently recruiting for SWE and data science jobs. Ideally something backend or fullstack or a ML engineer role</p>
+      <p>I'm currently recruiting for SWE and data science jobs. Ideally something backend, fullstack or a ML engineer role</p>
 
       <p>I am proficient in  Python, Java, Matlab, JavaScript, Git, React.js, NumPy, SciPy, PyTorch, TensorFlow, Pandas, Scikit-learn</p>
       <p>Here are some of my projects:</p>

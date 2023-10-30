@@ -1,19 +1,29 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import BlogPost from './BlogPost'; // Import the BlogPost component
 import './Blog.css';
 
-const posts = [
-  { id: 1, title: 'Post 1', date: '2023-08-20', content: 'This is the content of post 1.' },
-  { id: 2, title: 'Post 2', date: '2023-08-21', content: 'This is the content of post 2.' },
-];
 
-const Blog = () => {
+const Blog = ({blogs}) => {
   return (
-    <div className="blog">
-      <h1>Blog</h1>
-      {posts.map((post) => (
-        <BlogPost key={post.id} post={post} />
+    <div className="blog-list-outer-wrapper">
+      <h1 className="blog-list-title">Hi, welcome to my thing!!</h1>
+      <ul>
+      {blogs.map((post) => (
+        <li className="blog-element" key={post.postId}>
+          <div className='blog-card' key={post.post}>
+            <h1 className='blog-title'>{post.title}</h1>
+            <br></br>
+          {/*<p className='summary'>{post.content.substring(0, 500)}...</p>*/}
+            <div className='linker'>
+          <Link className='blog-card-link' to={`/blog/${post.postId}`}>Read More</Link>
+          </div>
+          </div>
+        </li>
+      
+        
       ))}
+      </ul> 
     </div>
   );
 };

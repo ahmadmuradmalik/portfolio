@@ -7,6 +7,7 @@ import About from "./components/About.js"
 import Navbar from './Navbar.js';
 import BlogPost from "./components/BlogPost.js"
 import ThreeHome from './components/ThreeHome.js';
+import BlogContent from './BlogContent.js';
 
 
 function App() {
@@ -17,11 +18,12 @@ function App() {
         <Route path="/" element={<ThreeHome />} />
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio/>} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/:postId" element={<BlogPost />} />
+        <Route path="/blog" element={<Blog blogs={BlogContent}/>} />
+        <Route path="/blog/:postId" element={<BlogPost post={BlogContent}/>} />
       </Routes>
     </Router>
   );
 }
 
 export default App;
+

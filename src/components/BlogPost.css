@@ -1,16 +1,50 @@
 .blog-post {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     border: 1px solid #eee;
     padding: 15px;
   }
   
   .post-date {
+    text-align: center;
     font-size: 0.8rem;
     color: #888;
   }
   
   .post-content {
     margin-top: 15px;
+	  text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+	  display: flex;
+	  align-items: center;
+    font-size: 1.5em;
   }
+
+  .omg {
+    overflow: hidden;
+    color: blue;
+  }
+  
+
+
+  .blog-text-wrapper {
+    
+    padding: 10%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    
+  }
+
+  .blogpost-title {
+    text-align: center;
+  }
+
+  .katex .mfrac .frac-line {
+    background-color: black; 
+    height: 0.5px; 
+}
+
+
+
   
   

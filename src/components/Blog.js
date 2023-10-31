@@ -7,10 +7,11 @@ import './Blog.css';
 const Blog = ({blogs}) => {
   return (
     <div className="blog-list-outer-wrapper">
-      <h1 className="blog-list-title">my blog ish thing</h1>
-      <ul>
+      <h1 className="blog-list-title">some random writeups </h1>
+      <div className='wrapper'>
+      
       {blogs.map((post) => (
-        <li className="blog-element" key={post.postId}>
+        <div className="blog-element" key={post.postId}>
           <div className='blog-card' key={post.post}>
             <h1 className='blog-title'>{post.title}</h1>
             <br></br>
@@ -19,11 +20,12 @@ const Blog = ({blogs}) => {
           <Link className='blog-card-link' to={`/blog/${post.postId}`}>Read More</Link>
           </div>
           </div>
-        </li>
+        </div>
+        
       
         
       ))}
-      </ul> 
+     </div>
     </div>
   );
 };

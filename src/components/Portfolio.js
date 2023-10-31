@@ -25,10 +25,9 @@ const Portfolio = () => {
     },
     {
         title: "Housing Prices Analysis",
-        description: "Took US housing prices and then fitted models to predict houses given various predecided features. Tested different types of models (LinearRegression, RandomForests, NearestNeighbor) and then compared their performance woth each other using multiple metrics to decide on the best one",
+        description: "Took US housing prices and then fitted models to predict houses given various predecided features. Tested different types of models (LinearRegression, RandomForests, NearestNeighbor) and then compared their performance with each other using multiple metrics to decide on the best one",
         github: "https://github.com/ahmadmuradmalik/Basic-Housing-Analysis"
       },
-    // Add more projects as needed
   ];
 
   return (

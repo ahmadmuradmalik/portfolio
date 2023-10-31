@@ -1,9 +1,12 @@
 .blog-post {
-    margin-bottom: 15px;
-    border: 1px solid #eee;
+    
     padding: 15px;
+    background-color: white;
+    height: 100%;
   }
-  
+  .root {
+    height: 100%;
+  }
   .post-date {
     text-align: center;
     font-size: 0.8rem;
@@ -17,12 +20,14 @@
     padding-right: 15px;
 	  display: flex;
 	  align-items: center;
-    font-size: 1.5em;
+    font-size: 3rem;
+    color: black;
   }
 
   .omgpls {
     overflow-x: auto;
     text-align: center;
+    color: black;
   }
   
 
@@ -32,11 +37,16 @@
     padding: 10%;
     padding-top: 0%;
     padding-bottom: 0%;
+    color: black;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 1.2rem;
     
   }
 
   .blogpost-title {
     text-align: center;
+    color: black;
   }
 
   .katex .mfrac .frac-line {
